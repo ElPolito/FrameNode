@@ -1,0 +1,26 @@
+{% extends "Global/global.html" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{global.assets}}CSS/User/login.css">
+{% endblock %}
+
+{% block body %}
+
+{% include "Global/header.html" %}
+
+<form method="post" class="pop-up-style center">
+	<h1>Connexion</h1>
+	{% if error %}
+	<strong class="error">Pseudo ou mot de passe incorrect</strong>
+	{% endif %}
+	<div class="center">
+		<label for="pseudo" class="label"> Pseudo
+			<input type="text" name="pseudo" id="pseudo" class="input">
+		</label>
+		<label for="pass" class="label"> Mot de passe
+			<input type="password" name="pass" id="pass" class="input">
+		</label>
+		<button type="submit" class="button">Connexion</button>
+	</div>
+</form>
+{% endblock %}

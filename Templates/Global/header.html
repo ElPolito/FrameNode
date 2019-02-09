@@ -1,0 +1,34 @@
+<header>
+	
+	<a href="{{ global.path }}">
+		<div class="title">
+			<img src="">
+			<h1>Watchers</h1>
+		</div>
+	</a>
+
+	<ul>
+		<a href="{{ global.path }}actus">
+			<li>Actualités</li>
+		</a>
+		<a href="{{ global.path }}films">
+			<li>Films</li>
+		</a>
+		<a href="{{ global.path }}series">
+			<li>Séries</li>
+		</a>
+		{% if session.user %}
+		<a href="{{ global.path }}lists">
+			<li>Mes listes</li>
+		</a>
+		{% endif %}
+	</ul>
+
+	{% if session.user %}
+	<div class="user">
+		<img src="">
+		<h2>{{ session.user.pseudo }}</h2>
+	</div>
+	{% endif %}
+
+</header>

@@ -1,0 +1,32 @@
+{
+  "name": "watchers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cookies": "^0.7.3",
+    "handlebars": "^4.0.12",
+    "jsonwebtoken": "^8.4.0",
+    "mysql": "^2.16.0",
+    "nunjucks": "^3.1.7",
+    "sqlite3": "^4.0.6",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElPolito/FrameNode.git"
+  },
+  "author": "SmallProdApps",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElPolito/FrameNode/issues"
+  },
+  "homepage": "https://github.com/ElPolito/FrameNode#readme"
+}

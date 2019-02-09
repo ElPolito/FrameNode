@@ -10,7 +10,7 @@ var dbInfos = {
 	host : "localhost",
 	user : "root",
 	password : "",
-	database : "framephp"
+	database : "watchers"
 }
 
 var db = mysql.createConnection(dbInfos);

@@ -8,12 +8,6 @@ module.exports = class DAO {
 		this.nb = 0;	
 	}
 
-	close () {
-		/*DB.db.end(err => {
-			console.log("close");
-		})*/
-	}
-
 	getEvent () {
 		return this.event;
 	}
